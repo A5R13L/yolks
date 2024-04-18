@@ -26,7 +26,7 @@ jobs:
         with:
           registry: ghcr.io
           username: "a5r13l"
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.DOCKER_ACCESS }}
       - uses: docker/build-push-action@v4
         with:
           context: ./games/${{ matrix.game }}
